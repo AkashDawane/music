@@ -1,0 +1,30 @@
+//normalise css
+html{
+    margin: 0%;
+    padding :0%;
+    box-sizing: border-box;
+}
+
+.container{
+    margin-top: 50px;
+}
+
+#mydiv{
+    display: flex;
+}
+
+p{
+    font-family:"Fjalla One", sans-serif ;
+    font-weight: bold;
+  
+    
+}
+img{
+    display: inline;
+
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+}   

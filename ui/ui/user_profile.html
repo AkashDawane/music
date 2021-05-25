@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+ <meta charset="utf-8">
+
+      <title>Profile settings</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <link defer rel="stylesheet" href="../styles/user_style.css"> 
+       <link defer rel="stylesheet" href="../styles/library_style.css"> 
+                 
+              
+       <script src="../js/user_script.js"></script>
+</head>
+
+<body>
+   <!-- Header Starts -->
+    
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <img src="../assests/images/logo111.jpg" alt="">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-start" id="navbarNavAltMarkup">
+        <div class="navbar-nav mr-5">
+          <a class="nav-item nav-link text-light" href="../index.html">Home </a>
+          <a class="nav-item nav-link ml-3 text-light" href="../ui/music_library.html">Music Library</a>
+          <a class="nav-item nav-link ml-3 text-light" href="../ui/about.html">About Us</a>
+          <div class="dropdown" style="margin-left: 670px; margin-top: 5px;">
+            <button class="btn btn-outline-secondary dropdown-toggle text-light userbtn" type="button"
+              id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Profile</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#" id="name">Name</a>
+              <a class="dropdown-item" href="#" id="mail1">email</a>
+              <a class="dropdown-item" href="#">Edit profile</a>
+              <a class="dropdown-item" href="#" id="logout">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Header Ends -->
+
+<div class="container " style="margin-top: 100px;">
+      <div class="row gutters-sm">
+
+        <div class="col-md-4 d-none d-md-block">
+
+          <div class="card">
+
+            <div class="card-body">
+
+ 
+              <nav class="nav flex-column nav-pills nav-gap-y-1">
+
+ 
+                <a href="#profile" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded active">
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user mr-2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>Profile Information
+
+                </a>
+
+ 
+                <a href="#picture" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings mr-2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>Change Profile Picture
+
+                </a>
+
+ 
+                <a href="#security" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shield mr-2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>Security
+
+                </a>
+
+                  </li>
+
+              </nav>
+
+ 
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-8">
+
+          <div class="card">
+
+            <div class="card-header border-bottom mb-3 d-flex d-md-none">
+
+              <ul class="nav nav-tabs card-header-tabs nav-gap-x-1" role="tablist">
+
+                <li class="nav-item">
+
+                  <a href="#profile" data-toggle="tab" class="nav-link has-icon active"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></a>
+
+                </li>
+
+ 
+                <li class="nav-item">
+
+                  <a href="#picture" data-toggle="tab" class="nav-link has-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></a>
+
+                </li>
+
+ 
+                <li class="nav-item">
+
+                  <a href="#security" data-toggle="tab" class="nav-link has-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shield"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></a>
+
+                </li>
+
+ 
+               
+
+              </ul>
+
+            </div>
+
+ 
+            <div class="card-body tab-content">
+
+              <div class="tab-pane active" id="profile">
+
+                <h6>YOUR PROFILE INFORMATION</h6>
+
+                <hr>
+
+                <form>
+
+                  <div class="form-group">
+
+                    <label for="fullName">Full Name</label>
+
+                    <input type="text" class="form-control" id="fullName" aria-describedby="fullNameHelp" placeholder="Enter your fullname" required="true" >
+                      <p id="p1"></p>
+                    <small id="fullNameHelp" class="form-text text-muted"></small>
+                    
+                  
+                  </div>
+
+            
+
+                  <div class="form-group">
+
+                    <label for="url">Email</label>
+
+                    <input type="text" class="form-control" id="url" placeholder="Enter your email address" required="true">
+                    <p id="p2"></p>
+                  </div>
+                  
+
+                  <div class="form-group">
+
+                    <label for="mobile">Contact No</label>
+
+                    <input type="tel" class="form-control" id="mobile" placeholder="Enter your Contact no" required="true" >
+                    <p id="p3"></p>
+                  </div>
+                  <div class="form-group">
+
+                    <label for="password">password</label>
+
+                    <input type="password" class="form-control" id="password" placeholder="Enter password" >
+                    <p id="p3"></p>
+                  </div>
+
+
+                
+
+                  <button type="submit" class="btn btn-danger" id="submit">Update Profile</button>
+
+                  <button type="reset" class="btn btn-danger">Reset Changes</button>
+
+                </form>
+
+              </div>
+
+              
+              <div class="tab-pane" id="picture">
+
+                <h6>CHANGE PROFILE PICTURE</h6>
+
+                <hr>
+
+                <form>
+
+                  <div class="form-group">
+
+                <h6>Image-upload with preview</h6>
+
+
+    <div class="js--image-preview"></div>
+    <div class="upload-options">
+      <label>
+        <input type="file" class="image-upload"   id="filePhoto"    accept="image/jpg,image/png,image/jpeg,image/gif" />
+        <p id="output"></p>
+      </label>
+    </div>
+
+                  </div>
+
+                </form>
+
+                <form>
+
+                  <div class="form-group">
+
+            
+
+                    <button class="btn btn-danger" type="button">UPLOAD PICTURE</button>
+
+                  </div>
+
+                </form>
+
+                  </div>
+
+
+              <div class="tab-pane" id="security">
+
+                <h6>CHANGE PASSWORD</h6>
+
+                <hr>
+
+                <form>
+
+                  <div class="form-group">
+
+                    <label for="fullName">Old password</label>
+
+                    <input type="password" class="form-control" id="oldpwd"     placeholder="Enter your old password" required="true">
+                    </div>
+                    <div id="showErrorOld"></div>
+
+                    <div class="form-group">
+                    <label for="fullName">New password</label>
+
+                    <input type="password" id="pwd"  class="form-control mt-1" placeholder="Enter New password" required="true">
+                  </div>
+                  <div id="showErrorPwd"></div>
+
+
+                  <div class="form-group">
+                    <label for="fullName">Confirm password</label>
+
+                    <input type="password" id="cpwd"   class="form-control mt-1" placeholder="Confirm new password" required="true">
+
+                  </div>
+                  <div id="showErrorcPwd"></div>
+
+                </form>
+
+                <form>
+
+                  <div class="form-group">
+
+            
+
+                    <button class="btn btn-danger" type="submit" id="changepass">SAVE</button>
+
+                  </div>
+
+                </form>
+
+                  </div>
+
+                  
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+ 
+    </div>
+
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+<script src="http://netdna.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+
+  
+
+</script>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted" id="footer1">
+    <hr>
+    <section
+      class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+       </section>
+    <section class="sec">
+      <div class="container text-center text-md-start mt-5">
+              <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase  mb-4">
+              <img class="mb-2" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt=""
+                  width="20" height="20"> <strong>PlanetM</strong>
+              
+            </h6>
+            <p>
+             Listen to your favourite Music
+            </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text mb-4">
+              Features
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Cool Stuff</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Favourite Music</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Playlists</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">other</a>
+            </p>
+          </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase  mb-4">
+              Follow Us on
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Facebook <img src="/assests/images/fb.png" height="20px" width="30px"></a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Instagram  <img src="/assests/images/insta.jfif" height="20px" width="30px"></a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Twitter  <img src="/assests/images/twitter.png" height="20px" width="30px"></a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Other</a>
+            </p>
+          </div>
+  
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase  mb-4">
+              Contact
+            </h6>
+            <p><i class="fas fa-home me-3"></i> Pune</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              PlanetM@music.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+  </footer>
+  <!-- Footer -->
+</body>
+
+</html>

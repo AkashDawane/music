@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlanetM</title>
+    <link rel="stylesheet" href="../styles/library_style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body class="bg-dark">
+    <!-- Header Starts -->
+    
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <img src="../assests/images/logo111.jpg" alt="">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-start" id="navbarNavAltMarkup">
+        <div class="navbar-nav mr-5">
+          <a class="nav-item nav-link text-light" href="../index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link ml-3 text-light" href="#">Music Library</a>
+          <a class="nav-item nav-link ml-3 text-light" href="../ui/about.html">About Us</a>
+          <div class="dropdown" style="margin-left: 670px; margin-top: 5px;">
+            <button class="btn btn-outline-secondary dropdown-toggle text-light userbtn" type="button"
+              id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Profile</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#" id="name">Name</a>
+              <a class="dropdown-item" href="#" id="mail1">email</a>
+              <a class="dropdown-item" href="../ui/user_profile.html">Edit profile</a>
+              <a class="dropdown-item" href="#" id="logout">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Header Ends -->
+
+
+    <!-- Main-body Starts -->
+    <section class="page-wrapper">
+
+        <!-- Search Box Starts -->
+        <div class="search">
+            <form class="form-inline">
+                <input id="searchkey"  style="width: 600px;" class="form-control mr-sm-2" type="search"  placeholder="Search for Songs" aria-label="Search">
+                <button class="btn btn-info my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+        <!-- Search Box Ends -->
+
+        <!-- Song Slider Starts -->
+        <div class="song-slider">
+            <h2 class="slider-title">Trending Songs</h2>
+            <i class="fas fa-chevron-left prev"></i>
+            <i class="fas fa-chevron-right next"></i>
+            <div class="song-wrapper-1">
+                <!-- treanding songs here -->
+            </div>
+        </div>
+        <!-- Song Slider Ends -->
+        <hr class="bg-white">
+
+     <!-- Song Slider Starts -->
+    <div class="song-slider">
+        <h2 class="slider-title">Rock Songs</h2>
+        <i class="fas fa-chevron-left prev"></i>
+        <i class="fas fa-chevron-right next"></i>
+        <div class="song-wrapper-2">
+            <!-- rock songs -->
+        </div>
+      </div>
+      <!-- Song Slider Ends -->
+      <hr class="bg-white">
+      <!-- Song Slider Starts -->
+      <div class="song-slider">
+        <h2 class="slider-title">Classical Songs</h2>
+        <i class="fas fa-chevron-left prev"></i>
+        <i class="fas fa-chevron-right next"></i>
+        <div class="song-wrapper-3">
+  
+        </div>
+      </div>
+      <!-- Song Slider Ends -->
+      <hr class="bg-white">
+      <!-- Song Slider Starts -->
+      <div class="song-slider">
+        <h2 class="slider-title">Pop Songs</h2>
+        <i class="fas fa-chevron-left prev"></i>
+        <i class="fas fa-chevron-right next"></i>
+        <div class="song-wrapper-4">
+  
+        </div>
+      </div>
+      <!-- Song Slider Ends -->
+      <hr class="bg-white">
+      <!-- Artist Slider Starts -->
+      <div class="song-slider">
+        <h2 class="slider-title">Featured Artists</h2>
+        <i class="fas fa-chevron-left prev"></i>
+        <i class="fas fa-chevron-right next"></i>
+        <div class="song-wrapper-5">
+  
+        </div>
+      </div>
+      <!-- Artist Slider Ends -->
+    </section>
+    <!-- Main-body Ends -->
+  
+    <!-- Footer Starts -->
+    <footer class="pt-4 my-md-5 pt-md-5 border-top bg-dark">
+      <div class="container">
+        <div class="row ">
+          <div class="col-12 col-md">
+            <img class="mb-2" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="20"
+              height="20"> <strong>PlanetM</strong>
+            <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+          </div>
+          <div class="col-12 col-sm">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Cool stuff</a></li>
+              <li><a class="text-muted" href="#">Random feature</a></li>
+              <li><a class="text-muted" href="#">Team feature</a></li>
+              <li><a class="text-muted" href="#">Stuff for developers</a></li>
+              <li><a class="text-muted" href="#">Another one</a></li>
+              <li><a class="text-muted" href="#">Last time</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Resource</a></li>
+              <li><a class="text-muted" href="#">Resource name</a></li>
+              <li><a class="text-muted" href="#">Another resource</a></li>
+              <li><a class="text-muted" href="#">Final resource</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Team</a></li>
+              <li><a class="text-muted" href="#">Locations</a></li>
+              <li><a class="text-muted" href="#">Privacy</a></li>
+              <li><a class="text-muted" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Ends -->
+  
+    <!-- For jQuery, popper, bootstrap  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+  
+    <!-- Slick Slider -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  
+    <script src="../js/library_script.js"></script>
+    <script src="../js/filters_script.js"></script>
+    <script src="../js/user_script.js"></script>
+  
+  </body>
+  
+  </html>

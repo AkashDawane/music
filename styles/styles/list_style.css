@@ -1,0 +1,31 @@
+html {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+#mydiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+p {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: bold;
+}
+
+img {
+  display: inline;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+/*# sourceMappingURL=list_style.css.map */

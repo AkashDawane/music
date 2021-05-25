@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music!</title>
+  <link rel="stylesheet" href="../styles/list_style.css">
+  <link rel="stylesheet" href="../styles/library_style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body class="bg-dark">
+  <!-- Header Starts -->
+    
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <img src="../assests/images/logo111.jpg" alt="">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-start" id="navbarNavAltMarkup">
+        <div class="navbar-nav mr-5">
+          <a class="nav-item nav-link text-light" href="../index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link ml-3 text-light" href="#">Music Library</a>
+          <a class="nav-item nav-link ml-3 text-light" href="../ui/about.html">About Us</a>
+          <div class="dropdown" style="margin-left: 670px; margin-top: 5px;">
+            <button class="btn btn-outline-secondary dropdown-toggle text-light userbtn" type="button"
+              id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Profile</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#" id="name">Name</a>
+              <a class="dropdown-item" href="#" id="mail1">email</a>
+              <a class="dropdown-item" href="../ui/user_profile.html">Edit profile</a>
+              <a class="dropdown-item" href="#" id="logout">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Header Ends -->
+
+
+
+  <div class="container pt-5 pl-5">
+    <div class="row">
+      <div id="mydiv">
+        <p class="text-white">
+          <!-- <img src="../assests/images/darshan.png" class="img-responsive" id="myimg" /> &nbsp;&nbsp;&nbsp; -->
+        <h1 id="h1" class="text-white"></h1>
+        </p>
+      </div>
+    </div>
+    <hr class="bg-light">
+    <table class="table table-dark table-hover table-condensed ">
+      <thead>
+        <tr>
+          <th scope="col">Sr.No</th>
+          <th scope="col">Title</th>
+          <th scope="col">Artist</th>
+          <th scope="col">Category</th>
+          <th scope="col">Language</th>
+        </tr>
+      </thead>
+      <tbody id="tdata">
+
+
+      </tbody>
+    </table>
+
+    <!-- Footer Starts -->
+    <footer class="pt-4 my-md-5 pt-md-5 border-top bg-dark">
+      <div class="container">
+        <div class="row ">
+          <div class="col-12 col-md">
+            <img class="mb-2" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="20"
+              height="20"> <strong>PlanetM</strong>
+            <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+          </div>
+          <div class="col-12 col-sm">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Cool stuff</a></li>
+              <li><a class="text-muted" href="#">Random feature</a></li>
+              <li><a class="text-muted" href="#">Team feature</a></li>
+              <li><a class="text-muted" href="#">Stuff for developers</a></li>
+              <li><a class="text-muted" href="#">Another one</a></li>
+              <li><a class="text-muted" href="#">Last time</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Resource</a></li>
+              <li><a class="text-muted" href="#">Resource name</a></li>
+              <li><a class="text-muted" href="#">Another resource</a></li>
+              <li><a class="text-muted" href="#">Final resource</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Team</a></li>
+              <li><a class="text-muted" href="#">Locations</a></li>
+              <li><a class="text-muted" href="#">Privacy</a></li>
+              <li><a class="text-muted" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Ends -->
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+  <script defer src="../js/song_list_script.js"></script>
+  <script src="../js/user_script.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,124 @@
+$text-color: white;
+
+//Mixin for slider arrow
+@mixin slider-arrows {
+    position: absolute;
+    top: 50%;
+    font-size: 2em;
+    color: $text-color;
+    cursor: pointer;
+}
+
+
+
+// CSS Normalization
+*, html{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// Header Style Starts
+.navbar{
+    background-color: black;
+
+    a, button{
+        font-weight: bold;
+    }
+
+    img{
+        width: 10%;
+        margin-left: 20px;
+        margin-right: 30px;
+    }
+}
+// Header Style Ends
+
+
+// Playlist Styles Starts
+.page-wrapper{
+    margin-top: 100px;
+
+    .search{
+        margin-left: 120px;
+    }
+}
+
+.song-slider{
+    position: relative;
+    
+    .slider-title{
+        margin: 20px auto;
+        margin-left: 120px;
+        color: $text-color
+    }
+    
+    .next, .next1{
+        @include slider-arrows();
+        right: 30px;
+    }
+
+    .prev, .prev1{
+        @include slider-arrows();
+        left: 30px;
+    }
+    .song-wrapper-1, .song-wrapper-2,
+    .song-wrapper-3,.song-wrapper-4,.song-wrapper-5{
+        width: 84%;
+        height: 180px;
+        margin: 0px auto;
+        overflow: hidden;
+
+        .song{
+            display: inline-block;
+           
+            height: 180px;
+            margin: 0px 10px;
+            border-radius: 10px;
+            overflow: hidden;
+
+            .song-image{
+                // width: 100%;
+                height: 100px;
+                border-radius: 10px;
+            }
+
+            .song-info{
+                margin-top: 5px;
+
+                a{
+                    text-decoration: none;
+                    color: $text-color;
+                }
+                p{
+                    color: $text-color;
+                }
+            }
+            
+        }
+    }
+}
+
+// Hover Effect
+@for $i from 1 to 6{
+
+    .song-slider .song-wrapper-#{$i}:hover .song{
+        transform: translateX(-25%);
+    }
+    .song-slider .song-wrapper-#{$i} .song:hover ~ .song{
+        transform: translateX(25%);
+    }
+    .song-slider .song-wrapper-#{$i} .song:hover{
+        transform: scale(1.2);
+    }
+}
+// Playlist Styles Ends
+
+// Footer Starts
+footer{
+    margin-top: 440px;
+    color: $text-color;
+}
+// Footer Ends
+
+
+

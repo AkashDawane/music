@@ -1,0 +1,147 @@
+// modal
+$myModalbg-color:rgb(51, 46, 46);
+$myModalFont-color:white;
+$f-size:large;
+
+body {
+    background-image: url("/assests/images/img2.jpg");
+    background-repeat: no-repeat;
+    background-size: 160rem 70rem;
+  }
+  //for navbar
+  @mixin size
+  {
+    font-size: large;
+    color: $myModalFont-color;
+  }
+  a {
+    @include size;
+  }
+  #imglogo {
+    border-radius: 50%;
+    margin-top: auto;
+  }
+  
+  
+  
+  #myModalBody
+  {
+      background-color: $myModalbg-color;
+      color: $myModalFont-color;
+  }
+  // LAnguage Selector
+  .container-fluid
+  {
+  font-size: $f-size;
+  border: 1px solid black;
+  background-color: rgb(34, 33, 33);
+  
+  }
+  
+  #footer1
+  {
+  margin-top: 440px;
+  color: aliceblue;
+  }
+  
+  .top_nav
+  {
+  float: right;
+  margin-top: 5px;
+  margin-left: 600px;
+  }
+  .navbar
+  {
+  margin-left: 50px;
+  }
+  
+  //registration form
+  .regbody
+  {
+  color: rgb(250, 243, 243);
+  }
+  
+  //login modal
+  .modal-dialog
+  {
+  background-color: $myModalbg-color;
+  }
+  .modal-content
+  {
+  background-color: $myModalbg-color;
+  
+  }
+  @mixin color {
+    color: white;
+  }
+  //demo cards
+  @mixin flip-card{
+  background-color: transparent;
+  width: 320px;
+  height: 60px;
+  border-radius: 50%;
+  perspective: 1000px;
+  }
+  
+  @mixin flip-card-inner{
+    position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 2.3s;
+  transform-style: preserve-3d;
+    }
+  
+    @mixin flip-card-front {
+      height: 100%;
+      -webkit-backface-visibility: hidden; 
+      backface-visibility: hidden;
+      
+    }
+  .flip-card {
+  @include flip-card
+  }
+  
+  .flip-card-inner {
+  @include flip-card-inner 
+  }
+  
+  // horizontal flip
+  .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    @include flip-card-front;
+    position: absolute;
+    width: 100%;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+  background-color: transparent;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    @include color;
+  background-color:transparent;
+  transform: rotateY(180deg);
+  
+  }
+  
+  //about us
+  
+  .cont {
+    @include color;
+  border: 1px solid #7a5252;
+  border-radius: 10px;
+  margin: 50px 100px;
+  }
+  #footerAbout
+  {
+  margin-top: 50px;
+  }
+  
+  

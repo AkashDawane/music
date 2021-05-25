@@ -1,0 +1,97 @@
+
+@mixin alignment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+// CSS Normalization
+*, html{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// Music Player Style Starts
+.music-player{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    .wrapper{
+        width: 480px;
+        border-radius: 15px;
+        padding: 10px 30px;
+        background: white;
+        box-shadow: 0px 6px 15px black;
+
+        .top-bar{
+            @include alignment();
+            justify-content: center;
+
+            span{
+                font-size: 23px;
+                font-weight: bold;
+            }
+        }
+
+        .img-area{
+            height: 256px;
+            width: 100%;
+            border-radius: 15px;
+            margin-top: 10px;
+            box-shadow: 0px 6px 15px black;
+
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 15px;
+            }
+        }
+
+        .song-details{
+            text-align: center;
+            margin: 30px 0px;
+
+            .name{
+                font-size: 21px;
+            }
+            .album{
+                font-size: 18px;
+            }
+        }
+
+        .progress-area{
+            height: 6px;
+            width: 100%;
+            background: grey;
+            border-radius: 50px;
+            cursor: pointer;
+
+            .progress-bar{
+                height: inherit;
+                width: 50%;
+                background: orangered;
+                 border-radius: 50px;
+
+            }
+
+            .timer{
+                @include alignment();
+                justify-content: space-between;
+                margin-top: 2px;
+            }
+        }
+
+        .controls{
+            @include alignment();
+            margin: 40px 0 10px 0;
+
+            #play{
+                font-size: 43px;
+            }
+        }
+    }
+}
+
+// Music Player Style Ends
